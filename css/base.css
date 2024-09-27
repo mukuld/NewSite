@@ -29,6 +29,15 @@ body {
   
 /* Core HTML elements */
 
+/* Link manipulation */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: dashed;
+}
+
 /* Text manipulation */
 h1 {
     font-size: 3em;
@@ -57,4 +66,8 @@ p, li {
   width: 100px;
   position: relative;
   float: inline-start;
+}
+
+.no-bullets {
+  list-style: none;
 }
