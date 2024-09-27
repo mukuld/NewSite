@@ -1,0 +1,55 @@
+/* Core HTML elements */
+html {
+    font-size: 14px;
+    font-family: 'Open Sans', 'Segoe UI', Calibri, Geneva, Verdana, sans-serif;
+    background-color: #00539f;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #ff9500;
+  width: 1200px;  
+  /*padding: 0 20px 20px 20px;
+    */
+    border: 3px solid black;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+  header {
+    width: 900px;
+    margin: auto;
+    height: 100px;
+    background-color: antiquewhite;
+  }
+  
+/* Core HTML elements */
+
+/* Text manipulation */
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    text-shadow: 3px 3px 1px black;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+/* Text manipulation */
+
+/* Classes */
+.small {
+  width: 100px;
+  position: relative;
+  float: inline-start;
+}
