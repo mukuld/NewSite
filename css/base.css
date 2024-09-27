@@ -9,14 +9,13 @@ body {
   margin: 0 auto;
   background-color: #ff9500;
   width: 1200px;  
-  /*padding: 0 20px 20px 20px;
-    */
-    border: 3px solid black;
+  padding: 0 20px 20px 20px;
+  border: 3px solid black;
   }
 
   img {
-    display: flex;
-    margin: 0 auto;
+    /* display: flex;
+    margin: 0 auto; */
     border-radius: 50%;
   }
 
@@ -64,7 +63,7 @@ p, li {
 /* Classes */
 .small {
   width: 100px;
-  position: relative;
+  /*position: relative;*/
   float: inline-start;
 }
 
