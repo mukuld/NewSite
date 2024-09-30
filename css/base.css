@@ -32,6 +32,11 @@ a:hover {
   color: limegreen
 }
 
+a[title] {
+  color:darkblue;
+  background-color: aqua;
+}
+
 /* Text manipulation */
 h1 {
     font-size: 3em;
