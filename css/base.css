@@ -24,11 +24,11 @@ body {
 
 /* Link manipulation */
 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: limegreen
 }
 
