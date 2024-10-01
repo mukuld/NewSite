@@ -19,10 +19,7 @@ header {
     height: 120px;
     background-color: antiquewhite;
   }
-  
-header > img {
-    align-self: self-start;
-  }
+
 /* Core HTML elements */
 
 /* Link manipulation */
@@ -43,7 +40,7 @@ a[title] {
 /* Text manipulation */
 h1 {
     font-size: 3em;
-    margin: 0;
+    margin: auto;
     padding: 20px 0;
     color: #00539f;
     text-shadow: 3px 3px 1px black;
@@ -105,7 +102,6 @@ p, li {
   align-items: center;
   justify-content: center;
   align-self: center;
-  margin: auto;
   align-self: center;
 }
 
