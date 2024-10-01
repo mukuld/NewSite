@@ -20,6 +20,9 @@ header {
     background-color: antiquewhite;
   }
 
+/* The CSS rule below is highly specific for an img element that is a child of the header element.
+Typically there will be only one img element inside the header and therefore this is safe to keep */
+
 header > img {
   align-self: center;
 }
@@ -35,6 +38,8 @@ a:hover {
   text-decoration: none;
   color: limegreen
 }
+
+/* This CSS rule only applies to the title of an anchor element */
 
 a[title] {
   color:darkblue;
@@ -102,9 +107,6 @@ p, li {
   margin: auto;
 }
 
-.left-align {
-  align-self: start;
-}
 /* Classes */
 
 /* @ Rules 
