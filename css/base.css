@@ -13,14 +13,14 @@ body {
   border: 3px solid black;
   }
 
-  header {
+header {
     width: 900px;
     margin: auto;
     height: 120px;
     background-color: antiquewhite;
   }
   
-  header > img {
+header > img {
     align-self: self-start;
   }
 /* Core HTML elements */
@@ -104,6 +104,8 @@ p, li {
   text-align: center;
   align-items: center;
   justify-content: center;
+  align-self: center;
+  margin: auto;
   align-self: center;
 }
 
