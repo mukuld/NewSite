@@ -68,7 +68,7 @@ p, li {
 
 .small {
   width: 100px;
-  /*float: inline-start;*/
+  float: inline-start;
 }
 
 .no-bullets {
