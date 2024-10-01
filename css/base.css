@@ -96,6 +96,10 @@ p, li {
   background-color: rebeccapurple;
   transform: rotate(0.8turn);
 }
+
+.flexi {
+  display: flex;
+}
 /* Classes */
 
 /* @ Rules 
