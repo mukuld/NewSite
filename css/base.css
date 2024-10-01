@@ -101,6 +101,7 @@ p, li {
   text-align: center;
   align-items: center;
   justify-content: center;
+  align-self: center;
 }
 /* Classes */
 
