@@ -69,8 +69,6 @@ p, li {
 
 .small {
   width: 100px;
-  /* float: left */
-  /* float: inline-start; */
 }
 
 .no-bullets {
@@ -101,11 +99,6 @@ p, li {
 }
 
 .center-align {
-  /*text-align: center;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  align-self: center;*/
   margin: auto;
 }
 
