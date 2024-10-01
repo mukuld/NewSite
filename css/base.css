@@ -20,6 +20,10 @@ header {
     background-color: antiquewhite;
   }
 
+header > img {
+  align-self: center;
+}
+
 /* Core HTML elements */
 
 /* Link manipulation */
@@ -40,7 +44,6 @@ a[title] {
 /* Text manipulation */
 h1 {
     font-size: 3em;
-    margin: auto;
     padding: 20px 0;
     color: #00539f;
     text-shadow: 3px 3px 1px black;
@@ -98,11 +101,12 @@ p, li {
 }
 
 .center-align {
-  text-align: center;
+  /*text-align: center;
   align-items: center;
   justify-content: center;
   align-self: center;
-  align-self: center;
+  align-self: center;*/
+  margin: auto;
 }
 
 .left-align {
