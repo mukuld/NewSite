@@ -103,6 +103,10 @@ p, li {
   justify-content: center;
   align-self: center;
 }
+
+.left-align {
+  align-self: start;
+}
 /* Classes */
 
 /* @ Rules 
