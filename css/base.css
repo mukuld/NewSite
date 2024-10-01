@@ -18,6 +18,8 @@ body {
     margin: auto;
     height: 100px;
     background-color: antiquewhite;
+    display: flex;
+    justify-content: flex-start;
   }
   
 /* Core HTML elements */
@@ -68,7 +70,7 @@ p, li {
 
 .small {
   width: 100px;
-  float: inline-start;
+  /*float: inline-start;*/
 }
 
 .no-bullets {
