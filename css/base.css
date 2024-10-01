@@ -100,6 +100,10 @@ p, li {
 .flexi {
   display: flex;
 }
+
+.center-align {
+  text-align: center;
+}
 /* Classes */
 
 /* @ Rules 
