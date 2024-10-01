@@ -20,6 +20,9 @@ body {
     background-color: antiquewhite;
   }
   
+  header > img {
+    align-self: self-start;
+  }
 /* Core HTML elements */
 
 /* Link manipulation */
