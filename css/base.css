@@ -16,10 +16,8 @@ body {
   header {
     width: 900px;
     margin: auto;
-    height: 100px;
+    height: 120px;
     background-color: antiquewhite;
-    /* display: flex; */
-    /* justify-content: flex-start;*/
   }
   
 /* Core HTML elements */
@@ -42,7 +40,6 @@ a[title] {
 /* Text manipulation */
 h1 {
     font-size: 3em;
-    text-align: center;
     margin: 0;
     padding: 20px 0;
     color: #00539f;
@@ -50,7 +47,6 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   font-size: 1.8em;
 }
 
@@ -103,6 +99,8 @@ p, li {
 
 .center-align {
   text-align: center;
+  align-items: center;
+  justify-self: center;
 }
 /* Classes */
 
