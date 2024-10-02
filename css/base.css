@@ -122,5 +122,9 @@ p, li {
   h2 {
     font-size: calc(1.8rem - 0.5vw);
   }
+
+  .small {
+    width: calc(1rem - 1vw);
+  }
 }
 /* @ Rules */
