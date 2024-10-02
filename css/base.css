@@ -25,6 +25,7 @@ Typically there will be only one img element inside the header and therefore thi
 
 header > img {
   align-self: center;
+  padding-left: 10px;
 }
 
 nav ul {
