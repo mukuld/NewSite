@@ -124,7 +124,7 @@ p, li {
   }
 
   .small {
-    width: calc(100px - 1vw);
+    width: calc(100px - 2vw);
   }
 }
 /* @ Rules */
