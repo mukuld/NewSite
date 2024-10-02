@@ -39,13 +39,6 @@ a:hover {
   color: limegreen
 }
 
-/* This CSS rule only applies to the title of an anchor element */
-
-a[title] {
-  color:darkblue;
-  background-color: aqua;
-}
-
 /* Text manipulation */
 h1 {
     font-size: 3rem;
