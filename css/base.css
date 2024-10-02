@@ -116,11 +116,11 @@ p, li {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: calc(3rem + 3vw);
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: calc(1.8rem + 2vw);
   }
 }
 /* @ Rules */
