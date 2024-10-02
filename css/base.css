@@ -109,10 +109,18 @@ p, li {
 
 /* Classes */
 
-/* @ Rules 
-@media (min-width: 30em) {
+/* @ Rules  */
+@media (max-width: 600px) {
   body {
     background-color: yellow
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
   }
 }
 /* @ Rules */
