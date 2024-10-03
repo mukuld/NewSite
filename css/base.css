@@ -9,9 +9,10 @@ body {
   margin: 0 auto;
   width: 75%;
   background-color: whitesmoke;
+  padding: 5px;
+  border: 1px solid black; */
   /*
   padding: 0 20px 20px 20px;
-  border: 3px solid black; */
   }
 
 header {
