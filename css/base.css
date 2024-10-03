@@ -1,3 +1,6 @@
+/* Importing other css files */
+@import url(button.css);
+
 /* Core HTML elements */
 html {
     font-size: 14px;
