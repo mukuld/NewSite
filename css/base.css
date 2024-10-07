@@ -79,6 +79,10 @@ p, li {
   border-radius: 50%;
 }
 
+.main-img {
+  width: 150px;
+}
+
 .small {
   width: 100px;
 }
