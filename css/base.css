@@ -117,7 +117,8 @@ p, li {
 
 .half-width {
   width: 50%;
-  margin: 12px;
+  margin: 5px;
+  padding: 12px;
 }
 
 .spaced {
