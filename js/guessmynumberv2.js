@@ -25,7 +25,7 @@ function checkGuess() {
 
     // Update and show the number of guesses left.
     const remainingGuesses = maxGuessCount - guessCount;
-    guessesLeft.textContent += ` | Guesses left: ${remainingGuesses}`;
+    guessesLeft.textContent = `Guesses left: ${remainingGuesses}`;
 
     if (userGuess === num) {
         lastResult.textContent = "Congratulations, You got it right!"
