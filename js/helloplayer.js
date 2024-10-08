@@ -1,4 +1,4 @@
-let myButton = document.querySelector("spaced")
+let myButton = document.querySelector("button")
 let myPlayer = document.querySelector("player-name")
 
 function setUserName() {
