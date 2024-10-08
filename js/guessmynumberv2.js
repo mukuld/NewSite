@@ -28,7 +28,7 @@ function checkGuess() {
     guessesLeft.textContent = `Guesses left: ${remainingGuesses}`;
 
     if (userGuess === num) {
-        lastResult.textContent = "Congratulations, You got it right in ${guessCount} guesses!"
+        lastResult.textContent = `Congratulations, You got it right in ${guessCount} guesses!`
         lastResult.style.backgroundColor = "green"
         lowOrHi.textContent = ""
         setGameOver()
