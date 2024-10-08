@@ -20,8 +20,10 @@ function checkGuess() {
     if (guessCount === 1) {
         guesses.textContent = "Previous guesses: "
     }
-    guesses.textContent += userGuess + " "
-    guesses.textContent = "Guesses left: " + (maxGuessCount - guessCount)
+    guesses.textContent += userGuess + " ";
+
+    const guessesLeft = maxGuessCount - guessCount;
+    guesses.textContent += ` | Guesses left: ${guessesLeft}`;
 
     if (userGuess === num) {
         lastResult.textContent = "Congratulations, You got it right!"
@@ -52,8 +54,14 @@ function setGameOver() {
     guessSubmit.disabled = true
     resetButton = document.createElement("button")
     resetButton.textContent = "Start new game"
-    document.body.append(resetButton)
-    resetButton.addEventListener("click", resetGame)
+    
+    // Find the Change Player button
+    const changePlayerButton = document.querySelector("button");
+
+    //Insert the reset button before the "Change Player" button 
+    changePlayerButton.parentNode.insertBefore(resetButton, changePlayerButton);
+
+    resetButton.addEventListener("click", resetGame);
 }
 
 function resetGame() {
@@ -61,7 +69,7 @@ function resetGame() {
 
     const resetParas = document.querySelectorAll(".resetParas p")
     for (let i = 0; i < resetParas.length; i++) {
-        resetParas(i).textContent = ""
+        resetParas[i].textContent = ""
     }
 
     const clearGuesses = document.querySelector(".guesses")
