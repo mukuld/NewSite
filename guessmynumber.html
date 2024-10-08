@@ -1,92 +1,90 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Guess My Number Game</title>
-    <!-- This area of the head will contain all the meta data -->
-    <meta charset="utf-8">
-    <meta name="author" content="Mukul Dharwadkar">
-    <meta name="description" content="A simple guess my number game written in Javascript. Play it to have fun">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <!-- End of metadata -->
-
-    <!-- This area will contain the <link> section -->
-    <!-- link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton" -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/base.css">
-    <!-- End of <link> section -->
-
-    <!-- This area will contain all the Javascripts that are loaded on this page -->
-    <script async src="js/main.js"></script>
-    <script defer src="js/helloplayer.js"></script>
-    <script defer src="js/guessmynumberv2.js"></script>
-    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- End of script area -->
-
-    <!-- This area will contain styling specific for this page only. THis should go away-->
-    <style>
-        .lastResult {
-            color: white;
-            padding: 3px;
-        }
-    </style>
-</head>
-
-<body>
-    <header class="flexi">
-        <img class="round-img small" src="img/Mukul-2019.jpg" alt="Mukul Dharwadkar" caption="Picture of Mukul Dharwadkar"/>
-        <h1 class="center-align">
-            Mukul Dharwadkar
-        </h1>
-        <img class="round-img small" src=img/symbol.jpg alt="Dharwadkar Logo" />
-    </header>
-    <nav>
-        <ul class="no-bullets">
-            <li><span><a href="./" title="This site">Home</a></span></li>
-            <li><a href="https://www.dharwadkar.com" title="My live site">My site</a></li>
-            <li><a href="https://www.linkedin.com/in/mukuldharwadkar" title="My LinkedIn profile">LinkedIn</a></li>
-            <li><a href="https://github.com/mukuld" title="My Github">GitHub Repos</a></li>
-            <li><a href="../nandini/" title="Nandini's Home Page">Nandini's Home Page</a></li>
-            <li><a href="../csp/" title="Jayant's Home Page">Jayant's Home Page</a></li>
-        </ul>
-    </nav>
-    <h2 class="letter"></h2>
-    <p>
-        <h2 class="letter">World's best Guess my Number game</h2>
-    </p>
-    <div class="flexi">
-        <div>
-            <p>This is a game for building your:</p>
-            <ul>
-                <li>Guessing ability</li>
-                <li>Analytical ability</li>
-                <li>Persistence</li>
+    <head>
+        <title>Guess My Number Game</title>
+        <!-- This area of the head will contain all the meta data -->
+        <meta charset="utf-8">
+        <meta name="author" content="Mukul Dharwadkar">
+        <meta name="description" content="A simple guess my number game written in Javascript. Play it to have fun">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <!-- End of metadata -->
+        <!-- This area will contain the <link> section -->
+        <!-- link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton" -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="css/base.css">
+        <!-- End of <link> section -->
+        <!-- This area will contain all the Javascripts that are loaded on this page -->
+        <script async src="js/main.js"></script>
+        <script defer src="js/helloplayer.js"></script>
+        <script defer src="js/guessmynumberv2.js"></script>
+        <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- End of script area -->
+        <!-- This area will contain styling specific for this page only. THis should go away-->
+        <style>
+            .lastResult {
+                color: white;
+                padding: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="flexi">
+            <img class="round-img small" src="img/Mukul-2019.jpg" alt="Mukul Dharwadkar" caption="Picture of Mukul Dharwadkar"/>
+            <h1 class="center-align">
+                Mukul Dharwadkar
+            </h1>
+            <img class="round-img small" src=img/symbol.jpg alt="Dharwadkar Logo" />
+        </header>
+        <nav>
+            <ul class="no-bullets">
+                <li><span><a href="./" title="This site">Home</a></span></li>
+                <li><a href="https://www.dharwadkar.com" title="My live site">My site</a></li>
+                <li><a href="https://www.linkedin.com/in/mukuldharwadkar" title="My LinkedIn profile">LinkedIn</a></li>
+                <li><a href="https://github.com/mukuld" title="My Github">GitHub Repos</a></li>
+                <li><a href="../nandini/" title="Nandini's Home Page">Nandini's Home Page</a></li>
+                <li><a href="../csp/" title="Jayant's Home Page">Jayant's Home Page</a></li>
             </ul>
-            <p>All these qualities will help you in real world where it will be imperitive to be all three. The game starts with asking you (the player) with your guess on the number the computer has chosen. For now, the computer does not restrict the number of tries that the user can take to guess. But keep watching this space. I plan to add more functionality to the program as we go forward and make it more interesting and challenging. At this time the range of numbers is just between 1 and 100. I will add difficulty levels to the game so that you can challenge yourself.
-            </p>
-            <h2>Update: Aug 6 2020</h2>
-            <p>I have included the promised functionlity here to limit the number of tries the player has. There are also also enhancements like:
-                <ol>
-                    <li>Show the guesses the player has made</li>
-                    <li>Ability to restart the game</li>
-                    <li>Prevent player from entering more values once the correct number is guessed or if the player is out of tries.</li>
-                </ol>
-            </p>
-            <p><a href="http://www.dharwadkar.com/" title="Mukul's Homepage" target="_blank">My website</a> (opens in a new tab) has a lot of other things to offer than just games and fun. I am a technology enthusiast who likes to play around with technology
-                and fortunately, as a part of my day job, I am able to play around with technology as well as help my customers.</p>
+        </nav>
+        <h2 class="letter"></h2>
+        <p>
+            <h2 class="letter">World's best Guess my Number game</h2>
+        </p>
+        <div class="flexi">
+            <div>
+                <p>This is a game for building your:</p>
+                <ul>
+                    <li>Guessing ability</li>
+                    <li>Analytical ability</li>
+                    <li>Persistence</li>
+                </ul>
+                <p>All these qualities will help you in real world where it will be imperitive to be all three. The game starts with asking you (the player) with your guess on the number the computer has chosen. For now, the computer does not restrict the number of tries that the user can take to guess. But keep watching this space. I plan to add more functionality to the program as we go forward and make it more interesting and challenging. At this time the range of numbers is just between 1 and 100. I will add difficulty levels to the game so that you can challenge yourself.
+                </p>
+                <h2>Update: Aug 6 2020</h2>
+                <p>I have included the promised functionlity here to limit the number of tries the player has. There are also also enhancements like:
+                    <ol>
+                        <li>Show the guesses the player has made</li>
+                        <li>Ability to restart the game</li>
+                        <li>Prevent player from entering more values once the correct number is guessed or if the player is out of tries.</li>
+                    </ol>
+                </p>
+                <p><a href="http://www.dharwadkar.com/" title="Mukul's Homepage" target="_blank">My website</a> (opens in a new tab) has a lot of other things to offer than just games and fun. I am a technology enthusiast who likes to play around with technology
+                    and fortunately, as a part of my day job, I am able to play around with technology as well as help my customers.
+                </p>
+            </div>
+            <div>
                 <h2 class="center-align">Choose your Number</h2>
                 <div class="right-box form">
                     <label for="guessField">Enter your guess: </label>
                     <input type="number" id="guessField" class="guessField" value=" "></input>
                     <input type="submit" value="Submit guess" class="guessSubmit" id="submit"></input>
                 </div>
+                <div class="resultParas">
+                    <p class="guesses"></p>
+                    <p class="lastResult"></p>
+                    <p class="lowOrHi"></p>
+                </div>
+            </div>
         </div>
-        <div class="resultParas">
-            <p class="guesses"></p>
-            <p class="lastResult"></p>
-            <p class="lowOrHi"></p>
-        </div>
-    </div>
         <button>Change user</button>
-</body>    
+    </body>    
 </html>
