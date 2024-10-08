@@ -115,7 +115,8 @@ p, li {
 }
 
 .half-width {
-  width: 50%;
+  /*width: 50%;*/
+  width: 450px;
 }
 
 /* Classes */
