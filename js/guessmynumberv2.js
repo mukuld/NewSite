@@ -6,6 +6,7 @@ let num = Math.floor(Math.random() * 100) + 1
 const guesses = document.querySelector(".guesses")
 const lastResult = document.querySelector(".lastResult")
 const lowOrHi = document.querySelector(".lowOrHi")
+const guessesLeft = document.querySelector(".guessesLeft")
 
 const guessSubmit = document.querySelector(".guessSubmit")
 const guessField = document.querySelector(".guessField")
@@ -22,8 +23,9 @@ function checkGuess() {
     }
     guesses.textContent += userGuess + " ";
 
-    const guessesLeft = maxGuessCount - guessCount;
-    guesses.textContent += ` | Guesses left: ${guessesLeft}`;
+    // Update and show the number of guesses left.
+    const remainingGuesses = maxGuessCount - guessCount;
+    guessesLeft.textContent += ` | Guesses left: ${remainingGuesses}`;
 
     if (userGuess === num) {
         lastResult.textContent = "Congratulations, You got it right!"
