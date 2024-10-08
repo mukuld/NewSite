@@ -114,6 +114,10 @@ p, li {
   margin: auto;
 }
 
+.half-width {
+  width: 50%;
+}
+
 /* Classes */
 
 /* @ Rules  */
