@@ -10,8 +10,9 @@ const lowOrHi = document.querySelector(".lowOrHi")
 const guessSubmit = document.querySelector(".guessSubmit")
 const guessField = document.querySelector(".guessField")
 
-let guessCount = 1
-let resetButton
+let guessCount = 1;
+let maxGuessCount = 10;
+let resetButton;
 guessField.focus()
 
 function checkGuess() {
@@ -20,13 +21,14 @@ function checkGuess() {
         guesses.textContent = "Previous guesses: "
     }
     guesses.textContent += userGuess + " "
+    guesses.textContent = "Guesses left: " + (maxGuessCount - guessCount)
 
     if (userGuess === num) {
         lastResult.textContent = "Congratulations, You got it right!"
         lastResult.style.backgroundColor = "green"
         lowOrHi.textContent = ""
         setGameOver()
-    } else if (guessCount === 10) {
+    } else if (guessCount === maxGuessCount) {
         lastResult.textContent = "!!!GAME OVER!!!"
         setGameOver()
     } else {
