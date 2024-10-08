@@ -1,5 +1,5 @@
-let myButton = document.querySelector("button")
-let myPlayer = document.querySelector("player-name")
+let myButton = document.querySelector(".spaced")
+let myPlayer = document.querySelector(".player-name")
 
 function setUserName() {
     let myName = prompt("Please enter your name.")
