@@ -17,11 +17,9 @@ function createCalendar(month) {
   }
 
   // ADD CONDITIONAL HERE
-    if ((choice === "January") || (choice === "March") || (choice === "May") || (choice === "July") || (choice === "August") || (choice === "October") || (choice === "December")) {
-    days = 31;
-    } else if ((choice === "April") || (choice === "June") || (choice === "September") || (choice === "November")) {
+   if ((month === "April") || (month === "June") || (month === "September") || (month === "November")) {
         days = 30;
-    } else if ((yearType === "leap") && (choice === "February")) {
+    } else if ((yearType === "leap") && (month === "February")) {
         days = 29;
     } else {
         days = 28;
@@ -29,7 +27,7 @@ function createCalendar(month) {
 
 
   list.textContent = "";
-  h1.textContent = month;
+  h1.textContent = `${month} ${getCurrentYear}`;
   for (let i = 1; i <= days; i++) {
     const listItem = document.createElement("li");
     listItem.textContent = i;
