@@ -27,7 +27,7 @@ function createCalendar(month) {
 
 
   list.textContent = "";
-  h1.textContent = `${month} ${getCurrentYear}`;
+  h2.textContent = `${month} ${getCurrentYear}`;
   for (let i = 1; i <= days; i++) {
     const listItem = document.createElement("li");
     listItem.textContent = i;
