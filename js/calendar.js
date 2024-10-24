@@ -1,5 +1,5 @@
 const select = document.querySelector("select");
-const list = document.querySelector("ul");
+const list = document.querySelector(".calendar");
 const h2 = document.querySelector("h2");
 
 select.addEventListener("change", () => {

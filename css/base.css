@@ -130,6 +130,17 @@ p, li {
   padding: 5px;
 }
 
+.calendar {
+  display: block;
+  float: left;
+  width: 25%;
+  border: 2px solid white;
+  padding: 5px;
+  height: 80px;
+  background-color: #4A2DB6;
+  color: white;
+}
+
 /* Classes */
 
 /* @ Rules  */
