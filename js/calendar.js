@@ -8,7 +8,7 @@ select.addEventListener("change", () => {
 });
 
 function createCalendar(month) {
-  let days = 31;
+  let days;
   let yearType = "regular"
   const getCurrentYear = new Date().getFullYear()
   
@@ -19,7 +19,10 @@ function createCalendar(month) {
   // ADD CONDITIONAL HERE
    if ((month === "April") || (month === "June") || (month === "September") || (month === "November")) {
         days = 30;
-    } else if ((yearType === "leap") && (month === "February")) {
+    } else if ((month === "January") || (month === "March") || (month === "May") || (month === "July") || (month === "August") || (month === "October") || (month === "December")) {
+      days = 31;
+    }
+    else if ((yearType === "leap") && (month === "February")) {
         days = 29;
     } else {
         days = 28;
