@@ -133,7 +133,7 @@ p, li {
 .calendar > li {
   display: block;
   float: left;
-  width: 25%;
+  width: 13%;
   border: 2px solid white;
   padding: 5px;
   height: 80px;
