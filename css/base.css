@@ -130,7 +130,7 @@ p, li {
   padding: 5px;
 }
 
-.calendar > li {
+.calendar {
   display: block;
   float: left;
   width: 25%;
