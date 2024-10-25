@@ -8,10 +8,10 @@
 */
 
 const contacts = [
-    "Shital:669454730",
-    "Jayant:669454733",
-    "Nandini:669454733",
-    "Tai:978319734",
+    "Shital:623434730",
+    "Jayant:624234733",
+    "Nandini:665654733",
+    "Tai:965314564",
 ];
 
 const para = document.querySelector("p");
