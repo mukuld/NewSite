@@ -26,6 +26,7 @@ btn.addEventListener("click", () => {
 
     para.textContent = "";
     for (const contact in contacts) {
+        console.log(contact);
         const splitContact = contact.split(":");
         console.log(splitContact[0]);
         if (splitContact[0].toLowerCase === searchName) {
