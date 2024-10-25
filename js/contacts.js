@@ -28,8 +28,8 @@ btn.addEventListener("click", () => {
     for (const contact of contacts) {
         console.log(contact);
         const splitContact = contact.split(":");
-        console.log(splitContact[0].toLowerCase);
-        if (splitContact[0].toLowerCase === searchName) {
+        console.log(splitContact[0].toLowerCase());
+        if (splitContact[0].toLowerCase() === searchName) {
             para.textContent = `${splitContact[0]}'s number is ${splitContact[1]}.`;
             break;
         }
