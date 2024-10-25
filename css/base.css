@@ -146,7 +146,7 @@ p, li {
 /* @ Rules  */
 @media (max-width: 600px) {
   body {
-    background-color: yellow
+    background-color: aliceblue
   }
 
   h1 {
