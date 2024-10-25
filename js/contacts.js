@@ -11,7 +11,7 @@ const contacts = [
     "Shital:669454730",
     "Jayant:669454733",
     "Nandini:669454733",
-    "Tai:978319734"
+    "Tai:978319734",
 ];
 
 const para = document.querySelector("p");
