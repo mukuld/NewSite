@@ -20,15 +20,12 @@ const btn = document.querySelector("button");
 
 btn.addEventListener("click", () => {
     const searchName = input.value.toLowerCase();
-    console.log(searchName);
     input.value = "";
     input.focus();
 
     para.textContent = "";
     for (const contact of contacts) {
-        console.log(contact);
         const splitContact = contact.split(":");
-        console.log(splitContact[0].toLowerCase());
         if (splitContact[0].toLowerCase() === searchName) {
             para.textContent = `${splitContact[0]}'s number is ${splitContact[1]}.`;
             break;
