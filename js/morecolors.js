@@ -19,7 +19,7 @@ select.addEventListener('change', () => {
 	update("yellow", "blue");
 	break;
   case "psychedelic":
-	update("green", "yellow");
+	update("lime", "purple");
 	break;
 }
 });
