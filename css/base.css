@@ -52,7 +52,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: black
+  background-color: gainsboro;
 }
 
 /* Text manipulation */
