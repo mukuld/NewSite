@@ -15,6 +15,7 @@ btn.addEventListener("click", () => {
     input.focus();
     for (let i = 1; i <= num; i++) {
         let sqRoot = Math.sqrt(i);
+        console.log(sqRoot);
         if (Math.floor(sqRoot) !== sqRoot) {
             continue;
         }
