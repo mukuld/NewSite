@@ -13,7 +13,7 @@ btn.addEventListener("click", () => {
     const num = input.value;
     input.value = "";
     input.focus();
-    for (let i = 0; i <= num; i++) {
+    for (let i = 1; i <= num; i++) {
         let sqRoot = Math.sqrt(i);
         if (Math.floor(sqRoot) !== sqRoot) {
             continue;
