@@ -25,7 +25,7 @@ btn.addEventListener("click", () => {
     input.focus();
 
     para.textContent = "";
-    for (const contact in contacts) {
+    for (const contact of contacts) {
         console.log(contact);
         const splitContact = contact.split(":");
         console.log(splitContact[0]);
