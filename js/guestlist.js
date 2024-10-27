@@ -11,11 +11,11 @@ admitted.textContent = 'Admit: ';
 refused.textContent = 'Refuse: ';
 
 for (let person of people) {
-    if (person === "Phil" || "Lola") {
-        refused.textContent += person;
+    if (person === "Phil" || person === "Lola") {
+        refused.textContent += `${person} `;
 
     } else {
-        admitted.textContent += person;
+        admitted.textContent += `${person} `;
     }
 }
 
