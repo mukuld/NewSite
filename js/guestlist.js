@@ -17,7 +17,7 @@ for (let person of people) {
     } else {
         admitted.textContent += `${person}, `;
     }
+    admitted.textContent = admitted.textContent.replace(admitted.textContent.slice(-1), ".");
 }
 
-admitted.textContent = admitted.textContent.replace(admitted.textContent.slice(-1), ".");
 
