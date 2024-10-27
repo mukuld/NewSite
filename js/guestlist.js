@@ -21,3 +21,4 @@ for (let person of people) {
 // console.log("Last character is: ", admitted.textContent.slice(-1));
 // admitted.textContent = admitted.textContent.replace(admitted.textContent.slice(-1), ".");
 admitted.textContent = admitted.textContent.slice(0, admitted.textContent.lastIndexOf(", ")) + ".";
+refused.textContent = refused.textContent.slice(0, refused.textContent.lastIndexOf(", ")) + ".";
