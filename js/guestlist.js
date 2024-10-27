@@ -18,7 +18,7 @@ for (let person of people) {
         admitted.textContent += `${person}, `;
     }
 }
-console.log(admitted.textContent.slice(-1));
+console.log("Last character is: ", admitted.textContent.slice(-1));
 // admitted.textContent = admitted.textContent.replace(admitted.textContent.slice(-1), ".");
 
 
