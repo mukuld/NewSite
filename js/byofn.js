@@ -26,10 +26,10 @@ function displayMessage(msgText, msgType) {
         panel.parentNode.removeChild(panel),);
     
     if (msgType === "warning") {
-        msg.style.backgroundImage = "url(img/warning.png)";
+        msg.style.backgroundImage = "url(../img/warning.png)";
         panel.style.backgroundColor = "red";
     } else if (msgType === "chat") {
-        msg.style.backgroundImage = "url(img/chat.png)";
+        msg.style.backgroundImage = "url(../img/chat.png)";
         panel.style.backgroundColor = "aqua";
     } else {
         msg.style.paddingLeft = "20px";
