@@ -5,7 +5,7 @@
 */
 
 const btn = document.querySelector("button");
-btn.addEventListener("click", () => displayMessage("This is a different message", "chat"),);
+btn.addEventListener("click", () => displayMessage("This is a different message", "warning"),);
 
 function displayMessage(msgText, msgType) {
     const body = document.body;
