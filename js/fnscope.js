@@ -19,3 +19,6 @@ function output() {
     document.body.appendChild(para);
     para.textContent = `Value = ${value}`;
 }
+
+const oput = document.querySelector(".p-para");
+oput.textContent = `Value is: ${output()}`
