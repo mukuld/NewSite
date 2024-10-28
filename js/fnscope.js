@@ -14,11 +14,11 @@ function b() {
     const z = 3;
 }
 
-function output() {
+function output(value) {
     const para = document.createElement("p");
     document.body.appendChild(para);
     para.textContent = `Value = ${value}`;
 }
 
-const oput = document.querySelector(".p-para");
-oput.textContent = `Value is: ${output(x)}`
+// const oput = document.querySelector(".p-para");
+// oput.textContent = `Value is: ${output(x)}`
