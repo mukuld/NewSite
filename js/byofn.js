@@ -5,6 +5,7 @@
 */
 
 const btn = document.querySelector("button");
+btn.addEventListener("click", () => displayMessage("This is a different message", "warning"),);
 
 function displayMessage(msgText, msgType) {
     const body = document.body;
@@ -34,5 +35,3 @@ function displayMessage(msgText, msgType) {
         msg.style.paddingLeft = "20px";
     }
 }
-
-btn.addEventListener("click", () => displayMessage("This is a different message", "warning"),);
