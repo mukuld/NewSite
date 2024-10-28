@@ -1,5 +1,5 @@
 /* 
-* Javascript to generate a list of numbers that are perfect squares.
+* Javascript to count down from a number to zero.
 * Date: 25 October 2024
 * Programmer: Mukul Dharwadkar
 */
