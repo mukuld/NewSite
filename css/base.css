@@ -145,6 +145,13 @@ p, li {
   color: white;
 }
 
+.msgBox {
+  width: 242px;
+  padding-left: 82px;
+  background-position: 25px center;
+  background-repeat: no-repeat;
+}
+
 /* Classes */
 
 /* @ Rules  */
