@@ -20,5 +20,5 @@ function output(value) {
     para.textContent = `Value = ${value}`;
 }
 
-const oput = document.querySelector(".p-para");
-oput.textContent = `Value is: ${output(x)}`
+// const oput = document.querySelector(".p-para");
+// oput.textContent = `Value is: ${output(x)}`
