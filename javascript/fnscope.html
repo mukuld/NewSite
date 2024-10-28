@@ -13,7 +13,7 @@
             Function Scope
         </title>
         <link rel="stylesheet" href="../css/base.css" />
-        <script type="module" src="../js/fnscope.js"></script>
+        <!-- script type="module" src="../js/fnscope.js"></script -->
     </head>
     <body>
         <header class="flexi">
@@ -36,5 +36,22 @@
         <div class="p-para">
             
         </div>
+        <script>
+            const x = 1;
+        
+            function a() {
+              const y = 2;
+            }
+        
+            function b() {
+              const z = 3;
+            }
+        
+            function output(value) {
+              const para = document.createElement('p');
+              document.body.appendChild(para);
+              para.textContent = `Value: ${value}`;
+            }
+          </script>
     </body>
     </html>
