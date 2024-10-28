@@ -21,4 +21,4 @@ function output() {
 }
 
 const oput = document.querySelector(".p-para");
-oput.textContent = `Value is: ${output()}`
+oput.textContent = `Value is: ${output(x)}`
