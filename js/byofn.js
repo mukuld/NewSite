@@ -5,11 +5,11 @@
 */
 
 const msgField = document.querySelector("#msgField");
-console.log("Message type is: ", msgType.value)
 const btn = document.querySelector("button");
 msgField.focus();
 btn.addEventListener("click", () => {
     const msgType = document.querySelector("input[name='msgType']");
+    console.log("Message type is: ", msgType.value)
     displayMessage(msgField.value, msgType.value)
 });
 
