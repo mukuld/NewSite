@@ -31,10 +31,10 @@ function displayMessage(msgText, msgType) {
     
     if (msgType === "warning") {
         msg.style.backgroundImage = "url(../img/warning.png)";
-        panel.style.backgroundColor = "red";
+        panel.style.backgroundColor = "orange";
     } else if (msgType === "chat") {
         msg.style.backgroundImage = "url(../img/chat.png)";
-        panel.style.backgroundColor = "aqua";
+        panel.style.backgroundColor = "chocolate";
     } else {
         msg.style.paddingLeft = "20px";
     }
