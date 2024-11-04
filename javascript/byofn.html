@@ -34,8 +34,19 @@
             </ul>
         </nav>
         <div>
-            <label for="msg">Send your message:</label>
-            <input type="text" id="msg" name="msg" required minlength="5" maxlength="140" size="30" spellcheck="true" height="75" />
+            <fieldset>
+                <legend>Select message type: </legend>
+                <div>
+                    <input type="radio" id="chat" name="msgType" value="chat" checked />
+                    <label for="chat">Chat</label>
+                </div>
+                <div>
+                    <input type="radio" id="warning" name="msgType" value="warning" />
+                    <label for="warning">Warning</label>
+                </div>
+            </fieldset>
+            <label for="msgField">Send your message:</label>
+            <input type="text" id="msgField" name="msgField" required minlength="5" maxlength="140" size="30" spellcheck="true" height="75" />
         </div>
         <div>
             <button>Send your message</button>

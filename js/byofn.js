@@ -4,8 +4,11 @@
 * Programmer: Mukul Dharwadkar
 */
 
+const msgField = document.querySelector("msgField");
+const msgType = 
 const btn = document.querySelector("button");
-btn.addEventListener("click", () => displayMessage("This is a different message", "chat"),);
+msgField.focus();
+btn.addEventListener("click", () => displayMessage(msgField.value, "chat"),);
 
 function displayMessage(msgText, msgType) {
     const body = document.body;
