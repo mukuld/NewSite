@@ -9,18 +9,18 @@ const btn = document.querySelector("button");
 msgField.focus();
 btn.addEventListener("click", () => {
     const msgType = document.querySelector("input[type='radio'][name='msgType']:checked");
-    if (msgType) {
+    // if (msgType) {
         displayMessage(msgField.value, msgType.value)
-    } else {
-        const body = document.body;
-        
-        const panel = document.createElement("div");
-        panel.setAttribute("class", "msgBox");
-        body.appendChild(panel)
+    // } else {
+        // const body = document.body;
 
-        const msg1 = document.createElement("p");
-        msg1.textContent = "Please select a message type!";
-        panel.appendChild(msg1);
+        // const panel = document.createElement("div");
+        // panel.setAttribute("class", "msgBox");
+        // body.appendChild(panel)
+
+        // const msg1 = document.createElement("p");
+        // msg1.textContent = "Please select a message type!";
+        // panel.appendChild(msg1);
     }
 });
 
@@ -55,6 +55,9 @@ function displayMessage(msgText, msgType) {
         msg.style.backgroundImage = "url(../img/chat.png)";
         panel.style.backgroundColor = "chocolate";
     } else {
+        msg.style.backgroundImage = "url(../img/warning.png)";
         msg.style.paddingLeft = "20px";
+        panel.style.backgroundColor = "red";
+        msg.textContent = "Please select a message type!"
     }
 }
