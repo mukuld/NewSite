@@ -15,6 +15,12 @@ btn.addEventListener("click", () => {
 
 function displayMessage(msgText, msgType) {
     const body = document.body;
+
+    // Check if a message box already exists and remove it
+    const existingPanel = document.querySelector(".msgBox");
+    if (existingPanel) {
+        existingPanel.remove();
+    }
     
     const panel = document.createElement("div");
     panel.setAttribute("class", "msgBox");
