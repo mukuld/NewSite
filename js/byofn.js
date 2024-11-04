@@ -21,7 +21,7 @@ btn.addEventListener("click", () => {
         // const msg1 = document.createElement("p");
         // msg1.textContent = "Please select a message type!";
         // panel.appendChild(msg1);
-    }
+ //   }
 });
 
 function displayMessage(msgText, msgType) {
