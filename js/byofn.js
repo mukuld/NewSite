@@ -4,8 +4,8 @@
 * Programmer: Mukul Dharwadkar
 */
 
-const msgField = document.querySelector("msgField");
-const msgType = document.querySelector("msgType");
+const msgField = document.querySelector("#msgField");
+const msgType = document.querySelector(".msgType");
 const btn = document.querySelector("button");
 msgField.focus();
 btn.addEventListener("click", () => displayMessage(msgField.value, msgType.value),);
