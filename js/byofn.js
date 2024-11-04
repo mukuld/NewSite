@@ -5,11 +5,13 @@
 */
 
 const msgField = document.querySelector("#msgField");
-const msgType = document.querySelector("input[name='msgType']:checked");
 console.log("Message type is: ", msgType.value)
 const btn = document.querySelector("button");
 msgField.focus();
-btn.addEventListener("click", () => displayMessage(msgField.value, msgType.value),);
+btn.addEventListener("click", () => {
+    const msgType = document.querySelector("input[name='msgType']");
+    displayMessage(msgField.value, msgType.value)
+});
 
 function displayMessage(msgText, msgType) {
     const body = document.body;
