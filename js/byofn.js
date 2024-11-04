@@ -8,7 +8,7 @@ const msgField = document.querySelector("#msgField");
 const btn = document.querySelector("button");
 msgField.focus();
 btn.addEventListener("click", () => {
-    const msgType = document.querySelector("input[name='msgType']");
+    const msgType = document.querySelector("input[type='radio'][name='msgType']:checked");
     console.log("Message type is: ", msgType.value)
     displayMessage(msgField.value, msgType.value)
 });
