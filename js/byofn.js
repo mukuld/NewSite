@@ -9,8 +9,19 @@ const btn = document.querySelector("button");
 msgField.focus();
 btn.addEventListener("click", () => {
     const msgType = document.querySelector("input[type='radio'][name='msgType']:checked");
-    console.log("Message type is: ", msgType.value)
-    displayMessage(msgField.value, msgType.value)
+    if (msgType) {
+        displayMessage(msgField.value, msgType.value)
+    } else {
+        const body = document.body;
+        
+        const panel = document.createElement("div");
+        panel.setAttribute("class", "msgBox");
+        body.appendChild(panel)
+
+        const msg1 = document.createElement("p");
+        msg1.textContent = "Please select a message type!";
+        panel.appendChild(msg1);
+    }
 });
 
 function displayMessage(msgText, msgType) {
