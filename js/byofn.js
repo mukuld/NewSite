@@ -9,9 +9,9 @@ const btn = document.querySelector("button");
 msgField.focus();
 btn.addEventListener("click", () => {
     const msgType = document.querySelector("input[type='radio'][name='msgType']:checked");
-    if (msgType) {
+    if (msgType) { // Check if any radio button is selected
         displayMessage(msgField.value, msgType.value)
-    } else {
+    } else { // If no radio button is selected then catch it and inform the user with a useful message.
         const body = document.body;
 
         const panel = document.createElement("div");
@@ -51,10 +51,10 @@ function displayMessage(msgText, msgType) {
     
     if (msgType === "warning") {
         msg.style.backgroundImage = "url(../img/warning.png)";
-        panel.style.backgroundColor = "orange";
+        panel.style.backgroundColor = "yellow";
     } else if (msgType === "chat") {
         msg.style.backgroundImage = "url(../img/chat.png)";
-        panel.style.backgroundColor = "chocolate";
+        panel.style.backgroundColor = "whitesmoke";
     } else {
         msg.style.paddingLeft = "20px";
     }
