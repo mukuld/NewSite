@@ -5,7 +5,7 @@
 */
 
 
-const input = document.querySelector("".numberInput");
+const input = document.querySelector(".numberInput");
 const para = document.querySelector("p");
 const btn = document.querySelector("button")
 
