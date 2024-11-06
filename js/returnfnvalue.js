@@ -33,7 +33,7 @@ input.addEventListener("change", () => {
         para.textContent = "Please enter a number";
     } else {
         para.textContent = `${num} squared is: ${squared(num)}. `;
-        para.textContent = `${num} cubed is: ${cubed(num)}. `;
-        para.textContent = `${num} factorial is: ${factorial(num)}. `;
+        para.textContent += `${num} cubed is: ${cubed(num)}. `;
+        para.textContent += `${num} factorial is: ${factorial(num)}. `;
     }
 });
