@@ -27,7 +27,7 @@ function factorial(num) {
     return num
 }
 
-input.addEventListener("change", () => {
+function handleChange() {
     const num = parseFloat(input.value);
     if (isNaN(num)) {
         para.textContent = "Please enter a number";
@@ -36,4 +36,6 @@ input.addEventListener("change", () => {
         para.textContent += `${num} cubed is: ${cubed(num)}. `;
         para.textContent += `${num} factorial is: ${factorial(num)}. `;
     }
-});
+}
+
+input.addEventListener("change", handleChange);
