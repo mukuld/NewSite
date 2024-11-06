@@ -33,9 +33,9 @@ function handleChange() {
     if (isNaN(num)) {
         para.textContent = "Please enter a number";
     } else {
-        para.textContent = `${num} squared is: ${squared(num)}. ` + "\n";
-        para.textContent += `${num} cubed is: ${cubed(num)}. `;
-        para.textContent += `${num} factorial is: ${factorial(num)}.`;
+        para.textContent = `<p>${num} squared is: ${squared(num)}.</p>`;
+        para.textContent += `<p>${num} cubed is: ${cubed(num)}.</p>`;
+        para.textContent += `<p>${num} factorial is: ${factorial(num)}.</p>`;
     }
 }
 
