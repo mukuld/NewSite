@@ -5,8 +5,9 @@
 */
 
 
-const input = document.querySelector('.numberInput');
-const para = document.querySelector('p');
+const input = document.querySelector("".numberInput");
+const para = document.querySelector("p");
+const btn = document.querySelector("button")
 
 function squared(num) {
     return num * num;
@@ -32,10 +33,11 @@ function handleChange() {
     if (isNaN(num)) {
         para.textContent = "Please enter a number";
     } else {
-        para.textContent = `${num} squared is: ${squared(num)}. `;
-        para.textContent += `${num} cubed is: ${cubed(num)}. `;
-        para.textContent += `${num} factorial is: ${factorial(num)}. `;
+        para.textContent = `${num} squared is: ${squared(num)}. \n`;
+        para.textContent += `${num} cubed is: ${cubed(num)}. \n`;
+        para.textContent += `${num} factorial is: ${factorial(num)}.`;
     }
 }
 
 input.addEventListener("change", handleChange);
+btn.addEventListener("click", handleChange)
