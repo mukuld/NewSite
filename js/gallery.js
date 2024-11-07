@@ -13,17 +13,18 @@ const altTexts = ["pic1 alt text", "pic2 alt text", "pic3 alt text", "pic4 alt t
 
 /* Looping through images */
 
-function selectImage() {
-    displayedImage.setAttribute("src", newImage.getAttribute("src"));
-    displayedImage.setAttribute("alt", newImage.getAttribute("alt"));
-}
 
 for (let i = 0; i < imgNames.length && i < altTexts.length; i++) {   
     const newImage = document.createElement('img');
     newImage.setAttribute('src', imgNames[i]);
     newImage.setAttribute('alt', altTexts[i]);
     thumbBar.appendChild(newImage);
-
+    
+    function selectImage() {
+        displayedImage.setAttribute("src", newImage.getAttribute("src"));
+        displayedImage.setAttribute("alt", newImage.getAttribute("alt"));
+    }
+    
     newImage.addEventListener("click", selectImage);
 }
 
