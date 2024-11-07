@@ -6,23 +6,23 @@ const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
 
-const imgNames = ["../img/pic1.jpg", "../img/pic2.jpg", "../img/pic3.jpg", "../img/pic4.jpg", "../img/pic2.jpg"];
+const imgNames = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic2.jpg"];
 
 /* Declaring the alternative text for each image file */
-const altTexts = ["pic1 alt text", "pic2 alt text", "pic3 alt text", "pic4 alt text", "pic5 alt text"]
+const altTexts = {"pic1.jpg" : "pic1 alt text", "pic2.jpg" : "pic2 alt text", "pic3.jpg" : "pic3 alt text", "pic4.jpg" : "pic4 alt text", "pic5.jpg" : "pic5 alt text"}
 
 /* Looping through images */
 
 
-for (let i = 0; i < imgNames.length && i < altTexts.length; i++) {   
+for (const imgName of imgNames) {   
     const newImage = document.createElement('img');
-    newImage.setAttribute('src', imgNames[i]);
-    newImage.setAttribute('alt', altTexts[i]);
+    newImage.setAttribute('src', `../img/${imgName}`);
+    newImage.setAttribute('alt', altTexts[imgName]);
     thumbBar.appendChild(newImage);
     
-    function selectImage() {
-        displayedImage.setAttribute("src", newImage.getAttribute("src"));
-        displayedImage.setAttribute("alt", newImage.getAttribute("alt"));
+    function selectImage(e) {
+        displayedImage.src = e.target.src;
+        displayedImage.alt, e.target.alt;
     }
 
     newImage.addEventListener("click", selectImage);
