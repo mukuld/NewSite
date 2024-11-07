@@ -26,6 +26,11 @@ body {
   height: 480px;
 }
 
+.thumb-img-container {
+  width: 640px;
+  height: 480px;
+}
+
 .overlay {
   position: absolute;
   top: 0;
