@@ -24,8 +24,22 @@ for (let i = 0; i < imgNames.length && i < altTexts.length; i++) {
         displayedImage.setAttribute("src", newImage.getAttribute("src"));
         displayedImage.setAttribute("alt", newImage.getAttribute("alt"));
     }
-    
+
     newImage.addEventListener("click", selectImage);
 }
 
 /* Wiring up the Darken/Lighten button */
+
+function darkenLightenImage() {
+    if (btn.getAttribute("class") === "dark") {
+        btn.setAttribute("class", "light");
+        btn.textContent = "Lighten";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 50%)";
+    } else {
+        btn.setAttribute("class", "dark");
+        btn.textContent = "Darken";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0%)";
+    }
+}
+
+btn.addEventListener("click", darkenLightenImage);
