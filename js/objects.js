@@ -10,18 +10,23 @@ const teamSize = 11;
 let currentSize = 0;
 const btn = document.querySelector("button");
 
-function Person(name) {
-    return this.name = name
-    // this.introduceSelf = function () {
-        // let greeting = `Hi, My name is ${this.name}`;
-        // return greeting;
-    // }
+function Person(name, role) {
+    this.name = name;
+    this.role = role;
+    this.returnName = function () {
+        return this.name;
+    }
+
+    this.retunRole = function () {
+        return this.retunRole;
+    }
 }
 
 function teamMember() {
     const name = document.querySelector(".member-name").value;
-    if (!name) return null;
-    return new Person(name);
+    const role = document.querySelector(".member-role").value;
+    if (!name || !role) return null;
+    return new Person(name, role);
 }
 
 function handleChange () {
@@ -32,12 +37,12 @@ function handleChange () {
 
     const member = teamMember();
     if (!member) {
-        alert("Please enter a name");
+        alert("Please enter a name and role");
         return;
     }
 
     const listItem = document.createElement("li");
-    listItem.textContent = `${member()}`;
+    listItem.textContent = `${member.returnName()}      ${member.retunRole}`;
     teamList.appendChild(listItem)
     currentSize++
 }
