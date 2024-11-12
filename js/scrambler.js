@@ -13,6 +13,7 @@ function scramble () {
     for (letter of word) {
         const letterItem = document.createElement("li");
         letterItem.textContent = `{$letter}`;
+        scrambleOutput.appendChild(letterItem);
     }
 }
 
