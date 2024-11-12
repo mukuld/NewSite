@@ -26,7 +26,7 @@ function handleChange () {
     let i = 0;
     while (i < teamSize) {
         const listItem = document.createElement("li");
-        listItem.textContent = `${index + 1}: ${teamMember()}`;
+        listItem.textContent = `${i + 1}: ${teamMember()}`;
     }
 }
 
