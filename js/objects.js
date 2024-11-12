@@ -11,7 +11,7 @@ let currentSize = 0;
 const btn = document.querySelector("button");
 
 function Person(name) {
-    return this.name
+    return this.name = name
     // this.introduceSelf = function () {
         // let greeting = `Hi, My name is ${this.name}`;
         // return greeting;
