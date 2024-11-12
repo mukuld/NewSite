@@ -10,4 +10,8 @@ const btn = document.querySelector(".scrambleBtn");
 
 function scramble () {
     const word = input.value;
+    for (letter of word) {
+        const letterItem = document.createElement("li");
+        letterItem.textContent = `{$letter}`;
+    }
 }
