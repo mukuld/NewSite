@@ -4,7 +4,7 @@
 * Programmer: Mukul Dharwadkar
 */
 
-const team = document.querySelector(".member-name");
+const teamList = document.getElementById("teamList");
 // const para = document.querySelector("p");
 const teamSize = 11;
 let currentSize = 0;
