@@ -18,7 +18,7 @@ function Person(name, role) {
     }
 
     this.returnRole = function () {
-        return this.returnRole;
+        return this.role;
     }
 }
 
