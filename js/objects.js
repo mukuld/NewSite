@@ -39,7 +39,7 @@ function handleChange () {
 
     const listItem = document.createElement("li");
     listItem.textContent = `${currentSize + 1}: ${member.introduceSelf()}`;
-    team.appendChild(listItem)
+    teamList.appendChild(listItem)
 }
 
 btn.addEventListener("click", handleChange);
