@@ -26,24 +26,23 @@ function teamMember() {
 }
 
 function handleChange () {
-    while (currentSize < teamSize) {
-        const member = teamMember();
-        if (!member) {
-            alert("Please enter a name");
-            return;
-        }
-    
-        const listItem = document.createElement("li");
-        listItem.textContent = `${currentSize + 1}: ${member.introduceSelf()}`;
-        teamList.appendChild(listItem)
-        currentSize++
-    }
-    }
     if (currentSize >= teamSize) {
         alert("Team is full");
         return;
     }
 
+    const member = teamMember();
+    if (!member) {
+        alert("Please enter a name");
+        return;
+    }
+
+    const listItem = document.createElement("li");
+    listItem.textContent = `${currentSize + 1}: ${member.introduceSelf()}`;
+    teamList.appendChild(listItem)
+    currentSize++
+    console.log("Team size is: ", currentSize);
+}
 
 btn.addEventListener("click", handleChange);
 input.addEventListener("change", handleChange);
