@@ -15,3 +15,5 @@ function scramble () {
         letterItem.textContent = `{$letter}`;
     }
 }
+
+btn.addEventListener("click", scramble);
