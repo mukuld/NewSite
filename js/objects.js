@@ -11,16 +11,15 @@ let currentSize = 0;
 const btn = document.querySelector("button");
 
 function Person(name) {
-    this.name = name;
-    this.introduceSelf = function () {
-        let greeting = `Hi, My name is ${this.name}`;
-        return greeting;
-    }
+    return this.name
+    // this.introduceSelf = function () {
+        // let greeting = `Hi, My name is ${this.name}`;
+        // return greeting;
+    // }
 }
 
 function teamMember() {
     const name = document.querySelector(".member-name").value;
-    // console.log("Name is: ", name);
     if (!name) return null;
     return new Person(name);
 }
@@ -41,7 +40,6 @@ function handleChange () {
     listItem.textContent = `${member.introduceSelf()}`;
     teamList.appendChild(listItem)
     currentSize++
-    console.log("Team size is: ", currentSize);
 }
 
 input.addEventListener("keydown", (event) => {
