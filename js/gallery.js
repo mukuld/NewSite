@@ -1,3 +1,9 @@
+/* 
+* Javascript to demonstrate return values from functions.
+* Date: 4 November 2024
+* Programmer: Mukul Dharwadkar
+*/
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
