@@ -5,7 +5,7 @@
 */
 
 const teamList = document.getElementById("teamList");
-// const para = document.querySelector("p");
+const input = document.querySelector(".member-name")
 const teamSize = 11;
 let currentSize = 0;
 const btn = document.querySelector("button");
@@ -43,4 +43,5 @@ function handleChange () {
 }
 
 btn.addEventListener("click", handleChange);
+input.addEventListener("change", handleChange);
 
