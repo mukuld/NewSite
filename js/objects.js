@@ -44,6 +44,5 @@ function handleChange () {
     console.log("Team size is: ", currentSize);
 }
 
-btn.addEventListener("click", handleChange);
 input.addEventListener("change", handleChange);
-
+btn.addEventListener("click", handleChange);
