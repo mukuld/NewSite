@@ -19,7 +19,7 @@ function Person(name) {
 }
 
 function teamMember() {
-    const name = document.querySelector("member-name").value;
+    const name = document.querySelector(".member-name").value;
     console.log("Name is: ", name);
     if (!name) return null;
     return new Person(name);
