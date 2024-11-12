@@ -13,14 +13,14 @@ const btn = document.querySelector("button");
 function Person(name) {
     this.name = name;
     this.introduceSelf = function () {
-        //team.textContent += name;
-        return this.name;
+        let greeting = `Hi, My name is ${this.name}`;
+        return greeting;
     }
 }
 
 function teamMember() {
     const name = document.querySelector(".member-name").value;
-    console.log("Name is: ", name);
+    // console.log("Name is: ", name);
     if (!name) return null;
     return new Person(name);
 }
@@ -38,11 +38,16 @@ function handleChange () {
     }
 
     const listItem = document.createElement("li");
-    listItem.textContent = `${currentSize + 1}: ${member.introduceSelf()}`;
+    listItem.textContent = `${member.introduceSelf()}`;
     teamList.appendChild(listItem)
     currentSize++
     console.log("Team size is: ", currentSize);
 }
 
-input.addEventListener("change", handleChange);
+input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        handleChange();
+        event.preventDefault();
+    }
+});
 btn.addEventListener("click", handleChange);
