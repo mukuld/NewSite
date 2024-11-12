@@ -1,5 +1,5 @@
 /* 
-* Javascript to demonstrate return values from functions.
+* Javascript to demonstrate how objects work.
 * Date: 11 November 2024
 * Programmer: Mukul Dharwadkar
 */
