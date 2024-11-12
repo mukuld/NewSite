@@ -23,7 +23,8 @@ function Person(name, role) {
 }
 
 function teamMember() {
-    const name = document.querySelector(".member-name").value;
+    // const name = document.querySelector(".member-name").value;
+    const name = input.value;
     const role = document.querySelector(".member-role").value;
     if (!name || !role) return null;
     return new Person(name, role);
