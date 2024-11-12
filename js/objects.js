@@ -37,7 +37,7 @@ function handleChange () {
     }
 
     const listItem = document.createElement("li");
-    listItem.textContent = `${member.introduceSelf()}`;
+    listItem.textContent = `${member()}`;
     teamList.appendChild(listItem)
     currentSize++
 }
