@@ -17,8 +17,8 @@ function Person(name, role) {
         return this.name;
     }
 
-    this.retunRole = function () {
-        return this.retunRole;
+    this.returnRole = function () {
+        return this.returnRole;
     }
 }
 
@@ -42,7 +42,7 @@ function handleChange () {
     }
 
     const listItem = document.createElement("li");
-    listItem.textContent = `${member.returnName()}      ${member.retunRole}`;
+    listItem.textContent = `${member.returnName()}      ${member.returnRole()}`;
     teamList.appendChild(listItem)
     currentSize++
 }
