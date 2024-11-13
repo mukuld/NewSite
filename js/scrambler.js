@@ -12,11 +12,7 @@ function scramble () {
     const word = input.value;
     let scrambledWord = [];
     for (const letter of word) {
-        // const letterItem = document.createElement("p");
-        // letterItem.textContent = letter;
-        // scrambleOutput.appendChild(letterItem);
-        scrambledWord += [letter];
-        scrambleOutput.appendChild(scrambledWord)
+        scrambleOutput.textContent += scrambledWord + letter;
     }
 }
 
