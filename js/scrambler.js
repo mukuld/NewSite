@@ -26,7 +26,7 @@ function handleChange() {
         return;
     }
 
-    const scrambled = scramble(word);
+    const scrambled = scramble(word.toUpperCase());
     scrambleOutput.textContent = scrambled;
 }
 
