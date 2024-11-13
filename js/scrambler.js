@@ -26,10 +26,11 @@ function handleChange() {
         return;
     }
 
-    const scrambled = scramble(word.toUpperCase());
     if (word === word.toUpperCase()) {
+        const scrambled = scramble(word.toUpperCase());
         scrambleOutput.textContent = scrambled.toUpperCase();
     } else {
+        const scrambled = scramble(word);
         scrambleOutput.textContent = scrambled
     }
 }
