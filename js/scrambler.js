@@ -27,7 +27,11 @@ function handleChange() {
     }
 
     const scrambled = scramble(word.toUpperCase());
-    scrambleOutput.textContent = scrambled;
+    if (word === word.toUpperCase() {
+        scrambleOutput.textContent = scrambled.toUpperCase();
+    } else {
+        scrambleOutput.textContent = scrambled
+    }
 }
 
 btn.addEventListener("click", handleChange);
