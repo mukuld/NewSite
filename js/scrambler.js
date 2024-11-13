@@ -26,9 +26,9 @@ function handleChange() {
         return;
     }
 
-    if (word === word.toUpperCase()) {
+    if (word !== word.toUpperCase()) {
         const scrambled = scramble(word.toUpperCase());
-        scrambleOutput.textContent = scrambled.toUpperCase();
+        scrambleOutput.textContent = scrambled.toLowerCase();
     } else {
         const scrambled = scramble(word);
         scrambleOutput.textContent = scrambled;
