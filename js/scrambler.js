@@ -16,7 +16,8 @@ function scramble () {
     // }
     for (let i = 1; i <= word.length(); i++) {
         if ((scrambledWord[i - 1] === "A") && (scrambledWord[i])) {
-            scrambleOutput.textContent += scrambledWord + scrambledWord[i] + scrambledWord[i - 1];
+            // scrambleOutput.textContent += scrambledWord + scrambledWord[i] + scrambledWord[i - 1];
+            console.log(scrambledWord + scrambledWord[i] + scrambledWord[i - 1])
         } else {
             scrambleOutput.textContent = scrambledWord + scrambledWord[i]
         }
