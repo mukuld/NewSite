@@ -11,8 +11,15 @@ const btn = document.querySelector(".scrambleBtn");
 function scramble () {
     const word = input.value;
     let scrambledWord = [];
-    for (const letter of word) {
-        scrambleOutput.textContent += scrambledWord + letter;
+    // for (const letter of word) {
+    //     scrambleOutput.textContent += scrambledWord + letter;
+    // }
+    for (let i = 1; i <= word.length(); i++) {
+        if ((scrambledWord[i - 1] === "A") && (scrambledWord[i]) {
+            scrambleOutput.textContent += scrambledWord + scrambledWord[i] + scrambledWord[i - 1];
+        } else {
+            scrambleOutput.textContent = scrambledWord + scrambledWord[i]
+        }
     }
 }
 
