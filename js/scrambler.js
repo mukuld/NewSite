@@ -8,7 +8,7 @@ const scrambleOutput = document.getElementById("scrambleOutput");
 const input = document.querySelector(".scrambleInput");
 const btn = document.querySelector(".scrambleBtn");
 
-function scramble () {
+function scramble() {
     const word = input.value;
     let scrambledWord = word.split("");
     // for (const letter of word) {
