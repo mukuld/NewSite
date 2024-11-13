@@ -16,6 +16,7 @@ function scramble () {
         // letterItem.textContent = letter;
         // scrambleOutput.appendChild(letterItem);
         scrambledWord += [letter];
+        scrambleOutput.appendChild(scrambledWord)
     }
 }
 
