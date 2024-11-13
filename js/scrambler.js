@@ -11,7 +11,7 @@ const btn = document.querySelector(".scrambleBtn");
 function scramble () {
     const word = input.value;
     for (const letter of word) {
-        const letterItem = document.createElement("li");
+        const letterItem = document.createElement("p");
         letterItem.textContent = letter;
         scrambleOutput.appendChild(letterItem);
     }
