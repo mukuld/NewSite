@@ -8,19 +8,31 @@ const scrambleOutput = document.getElementById("scrambleOutput");
 const input = document.querySelector(".scrambleInput");
 const btn = document.querySelector(".scrambleBtn");
 
-function scramble() {
-    const word = input.value;
+function scramble(word) {
     let scrambledWord = word.split("");
-    // for (const letter of word) {
-    //     scrambleOutput.textContent += scrambledWord + letter;
-    // }
     for (let i = 0; i < word.length; i++) {
         if ((scrambledWord[i] === "A") && (scrambledWord[i + 1] !== "A")) {
             [scrambledWord[i], scrambledWord[i + 1]] = [scrambledWord[i + 1], scrambledWord[i]];
             i++;
         }
     }
-    scrambleOutput.textContent = scrambledWord.join("");
+    return scrambledWord.join("");
 }
 
-btn.addEventListener("click", scramble);
+function handleChange() {
+    const word = input.value;
+    if (!word) {
+        scrambleOutput.textContent = "Please enter a word";
+        return;
+    }
+
+    const scrambled = scramble(word);
+    scrambleOutput.textContent = scrambled;
+}
+
+btn.addEventListener("click", handleChange);
+input.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        btn.click();
+    }
+})
