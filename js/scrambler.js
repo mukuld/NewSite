@@ -27,7 +27,7 @@ function handleChange() {
     }
 
     const scrambled = scramble(word.toUpperCase());
-    if (word === word.toUpperCase() {
+    if (word === word.toUpperCase()) {
         scrambleOutput.textContent = scrambled.toUpperCase();
     } else {
         scrambleOutput.textContent = scrambled
