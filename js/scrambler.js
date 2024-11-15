@@ -29,13 +29,6 @@ function handleChange() {
     const isUpperCase = word === word.toUpperCase();
     const scrambled = scramble(isUpperCase ? word : word.toUpperCase());
     scrambleOutput.textContent = isUpperCase ? scrambled : scrambled.toLowerCase();
-    // if (word !== word.toUpperCase()) {
-    //     const scrambled = scramble(word.toUpperCase());
-    //     scrambleOutput.textContent = scrambled.toLowerCase();
-    // } else {
-    //     const scrambled = scramble(word);
-    //     scrambleOutput.textContent = scrambled;
-    // }
 }
 
 btn.addEventListener("click", handleChange);
