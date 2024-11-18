@@ -158,6 +158,18 @@ p, li {
   background-repeat: no-repeat;
 }
 
+.bballs {
+  letter-spacing: -1px;
+  position: absolute;
+  font-size: 2rem;
+  margin: 0;
+  top: -4px;
+  right: 5px;
+  
+  color: transparent;
+  text-shadow: 0 0 4px white;
+}
+
 /* Classes */
 
 /* @ Rules  */
