@@ -41,7 +41,7 @@ class Ball {
         }
 
         if ((this.x - this.size) <= 0) {
-            this.velX = -Math.abs(this.velX);
+            this.velX = Math.abs(this.velX);
         }
 
         if ((this.y + this.size) >= height) {
@@ -49,7 +49,7 @@ class Ball {
         }
 
         if ((this.y - this.size) <= 0) {
-            this.velY = -Math.abs(this.velY);
+            this.velY = Math.abs(this.velY);
         }
 
         this.x += this.velX;
@@ -95,7 +95,7 @@ function loop() {
     for (const ball of balls) {
         ball.draw();
         ball.update();
-        // ball.collisionDetect();
+        ball.collisionDetect();
     }
 
     requestAnimationFrame(loop);
