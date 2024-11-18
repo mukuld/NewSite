@@ -9,11 +9,11 @@ body {
   margin: 0 auto;
 }
 */
-.head h2 {
+.head > h2 {
   font-family: 'Faster One', cursive;
 }
 
-section h3 {
+article > h3 {
   font-family: 'Faster One', cursive;
 }
 
