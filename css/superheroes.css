@@ -9,7 +9,11 @@ body {
   margin: 0 auto;
 }
 */
-.head h2, section h3 {
+.head h2 {
+  font-family: 'Faster One', cursive;
+}
+
+section h3 {
   font-family: 'Faster One', cursive;
 }
 
