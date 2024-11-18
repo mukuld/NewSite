@@ -11,6 +11,9 @@ body {
 */
 .head > h2 {
   font-family: 'Faster One', cursive;
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
 }
 
 article > h3 {
@@ -19,12 +22,12 @@ article > h3 {
 
 /* header styles */
 
-article h3 {
+article > h3 {
   font-size: 4rem;
   text-align: center;
 }
 
-.head p {
+.head > p {
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
@@ -43,10 +46,4 @@ section p {
 
 section ul {
   margin-top: 0;
-}
-
-h2.super {
-  font-size: 2.5rem;
-  letter-spacing: -5px;
-  margin-bottom: 10px;
 }
