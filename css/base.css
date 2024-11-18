@@ -1,7 +1,7 @@
 /* Importing other css files */
 @import url(button.css);
 @import url(gallery.css);
-@import url(superheroes.css)
+@import url(superheroes.css);
 
 /* Core HTML elements */
 html {
