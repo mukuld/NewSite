@@ -12,7 +12,7 @@ function populateHeader(obj) {
     header.appendChild(myH2);
     
     const myPara = document.createElement("p");
-    myPara.textContent = `Hometow: ${obj.hometown} // Formed: ${obj.formed}`;
+    myPara.textContent = `Hometown: ${obj.homeTown} // Formed: ${obj.formed}`;
     header.appendChild(myPara)
 }
 
