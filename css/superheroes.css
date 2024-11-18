@@ -9,13 +9,13 @@ body {
   margin: 0 auto;
 }
 */
-h2.super, h3.super {
+.head h2, section h3 {
   font-family: 'Faster One', cursive;
 }
 
 /* header styles */
 
-h3.super {
+section h3 {
   font-size: 4rem;
   text-align: center;
 }
