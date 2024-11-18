@@ -14,3 +14,14 @@ async function populate() {
     populateHeader(superHeroes);
     populateHeroes(superHeroes);
 }
+
+function populateHeader(obj) {
+    const header = document.querySelector(".head");
+    const myH2 = document.createElement("h2");
+    myH2.textContent = obj.squadName;
+    header.appendChild(myH2);
+
+    const myPara = document.createElement("p");
+    myPara.textContent = `Hometow: ${obj.hometown} // Formed: ${obj.formed}`;
+    header.appendChild(myPara)
+}
