@@ -36,19 +36,19 @@ class Ball {
     }
 
     update() {
-        if ((this.x + this.size) >= width) {
+        if (this.x + this.size >= width) {
             this.velX = -Math.abs(this.velX);
         }
 
-        if ((this.x - this.size) <= 0) {
+        if (this.x - this.size <= 0) {
             this.velX = Math.abs(this.velX);
         }
 
-        if ((this.y + this.size) >= height) {
+        if (this.y + this.size >= height) {
             this.velY = -Math.abs(this.velY);
         }
 
-        if ((this.y - this.size) <= 0) {
+        if (this.y - this.size <= 0) {
             this.velY = Math.abs(this.velY);
         }
 
@@ -62,7 +62,7 @@ class Ball {
             if (!(this === ball)) {
                 const dx = this.x - ball.x;
                 const dy = this.y - ball.y;
-                const distance = Math.sqrt(dx * dy + dy * dy);
+                const distance = Math.sqrt(dx * dx + dy * dy);
 
                 if (distance < this.size + ball.size) {
                     ball.color = this.color = randomRGB();
