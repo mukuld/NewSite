@@ -160,7 +160,7 @@ p, li {
 
 .bballs {
   letter-spacing: -1px;
-  position: absolute;
+  position: relative;
   font-size: 2rem;
   margin: 0;
   top: -4px;
