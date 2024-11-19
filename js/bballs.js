@@ -108,8 +108,8 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
-const width = (canvas.width = window.innerWidth);
-const height = (canvas.height = window.innerHeight);
+const width = (canvas.width = 900);
+const height = (canvas.height = 500);
 
 // function to generate random number
 
