@@ -166,6 +166,7 @@ p, li {
   top: -4px;
   right: 5px;
   
+  color: transparent;
   text-shadow: 0 0 4px white;
 }
 
