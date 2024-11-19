@@ -15,7 +15,7 @@ function random(min, max) {
 }
 
 function randomRGB() {
-    return `rgb(${random(0, 255)} ${random(0, 255)} ${random(0, 255)})`;
+    return `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`;
 }
 
 class Ball {
@@ -37,19 +37,19 @@ class Ball {
 
     update() {
         if ((this.x + this.size) >= width) {
-            this.velX = -(this.velX);
+            this.velX = -Math.abs(this.velX);
         }
 
         if ((this.x - this.size) <= 0) {
-            this.velX = (this.velX);
+            this.velX = Math.abs(this.velX);
         }
 
         if ((this.y + this.size) >= height) {
-            this.velY = -(this.velY);
+            this.velY = -Math.abs(this.velY);
         }
 
         if ((this.y - this.size) <= 0) {
-            this.velY = (this.velY);
+            this.velY = Math.abs(this.velY);
         }
 
         this.x += this.velX;
@@ -61,11 +61,11 @@ class Ball {
         for (const ball of balls) {
             if (!(this === ball)) {
                 const dx = this.x - ball.x;
-                const dy = this.y -ball.y;
+                const dy = this.y - ball.y;
                 const distance = Math.sqrt(dx * dy + dy * dy);
 
                 if (distance < this.size + ball.size) {
-                    ball.color = this.color = randomRGB;
+                    ball.color = this.color = randomRGB();
                 }
             }
         }
