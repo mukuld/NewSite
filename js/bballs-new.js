@@ -147,7 +147,8 @@ class EvilCircle extends Shape {
                 const distance = Math.sqrt(dx * dx + dy * dy);
 
                 if (distance < this.size + ball.size) {
-                    ball.remove();
+                    // ball.remove();
+                    ball.color = this.color = randomRGB();
                 }
             }
         }
