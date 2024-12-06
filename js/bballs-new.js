@@ -175,8 +175,8 @@ function loop() {
     ctx.fillRect(0, 0, width, height);
 
     const villain = new EvilCircle(
-        random(0 + size, width - size),
-        random(0 + size, height - size),
+        random(0 + 10, width - 10),
+        random(0 + 10, height - 10),
     )
     villain.draw();
     villain.checkBounds();
