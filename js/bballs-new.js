@@ -5,6 +5,7 @@
 */
 
 const canvas = document.querySelector("canvas");
+const ballCount = document.querySelector(".ball-counter");
 const ctx = canvas.getContext("2d");
 
 const width = (canvas.width = window.innerWidth);
@@ -148,6 +149,8 @@ class EvilCircle extends Shape {
 
                 if (distance < this.size + ball.size) {
                     ball.exists = false;
+                    count--
+                    ballCount.textContent = "Balls left" + count;
                 }
             }
         }
@@ -155,8 +158,9 @@ class EvilCircle extends Shape {
 }
 
 const balls = [];
+const count = 25;
 
-while (balls.length < 25) {
+while (balls.length < count) {
     const size = random(10, 20);
     const ball = new Ball(
         random(0 + size, width - size),

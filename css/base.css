@@ -169,6 +169,14 @@ p, li {
   text-shadow: 0 0 4px white;
 }
 
+.ball-counter {
+  position: absolute;
+  margin: 0;
+  top: 35px;
+  right: 5px;
+  color: #aaa;
+}
+
 /* Classes */
 
 /* @ Rules  */
