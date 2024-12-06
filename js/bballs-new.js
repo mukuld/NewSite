@@ -7,7 +7,7 @@
 const canvas = document.querySelector("canvas");
 const ballCount = document.querySelector(".ball-counter");
 const ctx = canvas.getContext("2d");
-// const body = document.body;
+const body = document.body;
 
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = 500);
@@ -162,7 +162,7 @@ class EvilCircle extends Shape {
         if (count === 0) {
             const panel = document.createElement("div");
             panel.setAttribute("class", "msgBox");
-            canvas.appendChild(panel)
+            body.appendChild(panel)
 
             const msg = document.createElement("p");
             msg.textContent = "You won!!!";
