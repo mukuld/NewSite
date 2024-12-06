@@ -7,6 +7,7 @@
 const canvas = document.querySelector("canvas");
 const ballCount = document.querySelector(".ball-counter");
 const ctx = canvas.getContext("2d");
+// const body = document.body;
 
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
@@ -154,6 +155,26 @@ class EvilCircle extends Shape {
                 }
             }
         }
+        const existingPanel = document.querySelector(".msgBox");
+        if (existingPanel) {
+            existingPanel.remove();
+        }
+        if (count === 0) {
+            const panel = document.createElement("div");
+            panel.setAttribute("class", "msgBox");
+            canvas.appendChild(panel)
+
+            const msg = document.createElement("p");
+            msg.textContent = "You won!!!";
+            panel.appendChild(msg);
+
+            const closeBtn = document.createElement("button");
+            closeBtn.textContent = "x";
+            panel.appendChild(closeBtn);
+    
+            closeBtn.addEventListener("click", () => 
+            panel.parentNode.removeChild(panel),);
+        }
     }
 }
 
@@ -173,6 +194,7 @@ while (balls.length < count) {
 
     balls.push(ball);
 }
+ballCount.textContent = "Balls left: " + count;
 
 const villain = new EvilCircle(
     random(0 + 10, width - 10),
