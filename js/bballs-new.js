@@ -181,9 +181,11 @@ function loop() {
     
     
     for (const ball of balls) {
-        ball.draw();
-        ball.update();
-        ball.collisionDetect();
+        if (ball.exists) {    
+            ball.draw();
+            ball.update();
+            ball.collisionDetect();
+        }
     }
     
     villain.draw();
