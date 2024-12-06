@@ -170,7 +170,7 @@ p, li {
 }
 
 .ball-counter {
-  position: absolute;
+  position: relative;
   margin: 0;
   top: 35px;
   right: 5px;
