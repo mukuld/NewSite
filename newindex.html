@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Mockup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+        }
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 1rem 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            text-align: center;
+            padding: 2rem;
+        }
+        .content-section {
+            padding: 2rem;
+            background: #f4f4f4;
+            margin: 1rem 0;
+        }
+        .content-section h2 {
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Consulting Business</h1>
+        <p>Expert Knowledge, Cutting-Edge Solutions</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <div>
+            <h1>Welcome to [Business Name]</h1>
+            <p>Your Partner in Innovation and Excellence</p>
+        </div>
+    </div>
+    <div id="about" class="content-section">
+        <h2>About Us</h2>
+        <p>We specialize in cloud solutions, data center management, and IT systems consulting. Our mission is to deliver exceptional value to our clients through innovative strategies and expert knowledge.</p>
+    </div>
+    <div id="services" class="content-section">
+        <h2>Services</h2>
+        <ul>
+            <li>Cloud Infrastructure Design</li>
+            <li>Data Center Optimization</li>
+            <li>System Administration Training</li>
+        </ul>
+    </div>
+    <div id="portfolio" class="content-section">
+        <h2>Portfolio</h2>
+        <p>Take a look at our successful projects and client testimonials.</p>
+    </div>
+    <div id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Your Consulting Business. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
