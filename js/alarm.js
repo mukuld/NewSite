@@ -4,7 +4,7 @@
 * Programmer: Mukul Dharwadkar
 */
 
-const name = document.querySelector("#name");
+const name1 = document.querySelector("#name");
 const delay = document.querySelector("#delay");
 const output = document.querySelector("#output");
 const button = document.querySelector("#set-alarm");
@@ -26,10 +26,14 @@ function alarm(person, delay) {
     });
 }
 
-function handleClick() {
-    alarm(name.value, delay,value)
-    .then((message) => (output.textContent = message))
-    .catch((error) => (output.textContent = `Couldn't set alarm: ${error}`));
+async function handleClick() {
+    try {
+        const message = await alarm(name1.value, delay.value);
+        output.textContent = message;
+    }
+    catch (error) {
+        output.textContent = `Couldn't set alarm: ${error}`;
+    }
 }
 
 button.addEventListener("click", handleClick);
