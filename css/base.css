@@ -32,6 +32,11 @@ header {
     background-color: antiquewhite;
   }
 
+  textarea {
+    display: block;
+    margin: 1rem 0;
+  }
+
 /* The CSS rule below is highly specific for an img element that is a child of the header element.
 Typically there will be only one img element inside the header and therefore this is safe to keep */
 
