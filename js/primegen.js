@@ -8,7 +8,7 @@
 const worker = new Worker("./generate.js");
 
 function handleClickToGenerate() {
-    const quota = document.querySelector("quota").value;
+    const quota = document.querySelector("#quota").value;
     worker.postMessage({
         command: "generate",
         quota,
