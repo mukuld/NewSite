@@ -21,7 +21,7 @@ function generatePrimes(quota) {
                 return false;
             }
         }
-        return true
+        return true;
     }
 
     const primes = [];
@@ -35,5 +35,5 @@ function generatePrimes(quota) {
     }
     /* When finished, send a message to the main thread,
     including the number of primes we generated */
-    postMessage(primes.length)
+    postMessage(primes.length);
 }
