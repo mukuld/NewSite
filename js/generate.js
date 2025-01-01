@@ -14,7 +14,7 @@ addEventListener("message", (message) => {
 });
 
 //Generate primes
-function generatePrimes() {
+function generatePrimes(quota) {
     function isPrime(n) {
         for (let c = 2; c <= Math.sqrt(n); ++c) {
             if (n % c === 0) {
