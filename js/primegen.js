@@ -5,13 +5,13 @@
 */
 
 // Create a new worker, giving it the code in generate.js by calling it here.
-const worker = new Worker("./generate.js");
-const worker1 = new Worker("../js/generate.js")
+const worker = new Worker("../js/generate.js")
 
 function handleClickToGenerate() {
     console.log("Sending message");
     const quota = document.querySelector("#quota").value;
-    worker1.postMessage({
+    console.log(`Generating ${quota} primes. Stand by...`)
+    worker.postMessage({
         command: "generate",
         quota,
     });
