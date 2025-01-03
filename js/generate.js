@@ -8,6 +8,7 @@
 If the message command is "generate", call the generatePrimes()*/
 
 addEventListener("message", (message) => {
+    console.log("Message received");
     if (message.data.command === "generate") {
         generatePrimes(message.data.quota);
     }

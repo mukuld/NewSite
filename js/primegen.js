@@ -10,11 +10,11 @@ const worker1 = new Worker("../js/generate.js")
 
 function handleClickToGenerate() {
     console.log("Sending message");
-    // const quota = document.querySelector("#quota").value;
-    // worker.postMessage({
-    //     command: "generate",
-    //     quota,
-    // });
+    const quota = document.querySelector("#quota").value;
+    worker.postMessage({
+        command: "generate",
+        quota,
+    });
 }
 
 function handleClickToReload() {
