@@ -25,7 +25,7 @@ function handleClickToReload() {
 /* When the user clicks on Generate prime, send a message to the worker.
 The message command is "generate", and the message also contains "quota",
 which is the number of primes to be generated.*/
-document.querySelector("#generate").addEventListener("click", handleClickToGenerate);
+document.querySelector("#generate").addEventListener("click", handleClickToGenerate());
 
 /* When the worker sends a message back to the main thread, update the output box with a message
 for the user, including the number of primes that were generated, taken from the message data */
