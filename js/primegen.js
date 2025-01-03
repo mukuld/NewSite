@@ -6,17 +6,19 @@
 
 // Create a new worker, giving it the code in generate.js by calling it here.
 const worker = new Worker("./generate.js");
+const worker1 = new Worker("../js/generate.js")
 
 function handleClickToGenerate() {
     console.log("Sending message");
-    const quota = document.querySelector("#quota").value;
-    worker.postMessage({
-        command: "generate",
-        quota,
-    });
+    // const quota = document.querySelector("#quota").value;
+    // worker.postMessage({
+    //     command: "generate",
+    //     quota,
+    // });
 }
 
 function handleClickToReload() {
+    console.log("Clearing everything")
     document.querySelector("#user-input").value = 
     'Try typing in here immediately after pressing "Generate primes"';
     document.location.reload();
