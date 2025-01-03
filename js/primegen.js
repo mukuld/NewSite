@@ -11,7 +11,7 @@ const worker1 = new Worker("../js/generate.js")
 function handleClickToGenerate() {
     console.log("Sending message");
     const quota = document.querySelector("#quota").value;
-    worker.postMessage({
+    worker1.postMessage({
         command: "generate",
         quota,
     });
