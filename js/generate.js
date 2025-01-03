@@ -4,6 +4,15 @@
 * Programmer: Mukul Dharwadkar
 */
 
+/* Listen for messages from the main thread.
+If the message command is "generate", call the generatePrimes()*/
+
+addEventListener("message", (message) => {
+    console.log("Message received");
+    if (message.data.command === "generate") {
+        generatePrimes(message.data.quota);
+    }
+});
 
 //Generate primes
 function generatePrimes(quota) {
@@ -29,13 +38,3 @@ function generatePrimes(quota) {
     including the number of primes we generated */
     postMessage(primes.length);
 }
-
-/* Listen for messages from the main thread.
-If the message command is "generate", call the generatePrimes()*/
-
-addEventListener("message", (message) => {
-    console.log("Message received");
-    if (message.data.command === "generate") {
-        generatePrimes(message.data.quota);
-    }
-});
