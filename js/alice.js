@@ -19,8 +19,9 @@ const aliceTumbling = [
   const alice2 = document.querySelector("#alice2");
   const alice3 = document.querySelector("#alice3");
 
-  alice1.animate(aliceTumbling, aliceTiming).then(
-      alice2.animate(aliceTumbling, aliceTiming)
-  ).then(
-      alice3.animate(aliceTumbling, aliceTiming)
-  );
+  const image1 = alice1.animate(aliceTumbling, aliceTiming);
+  const image2 = alice2.animate(aliceTumbling, aliceTiming);
+
+  const alice = document.querySelector("#alice-container");
+
+  Promise.all(alice.getAnimations().map((image1) => image1.finished));
