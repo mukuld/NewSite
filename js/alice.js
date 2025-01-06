@@ -20,7 +20,7 @@ const aliceTumbling = [
   const alice3 = document.querySelector("#alice3");
 
   alice1.animate(aliceTumbling, aliceTiming).then(
-      alice2.animate(aliceTumbling, aliceTiming);
+      alice2.animate(aliceTumbling, aliceTiming)
   ).then(
-      alice3.animate(aliceTumbling, aliceTiming);
+      alice3.animate(aliceTumbling, aliceTiming)
   );
